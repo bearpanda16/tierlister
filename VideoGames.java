@@ -1,21 +1,21 @@
 import java.util.Scanner;
 
-public class BrawlStars {
-    private int numberOfCharacters;
+public class VideoGames {
+    private int numberOfGames;
     private boolean sorted = false;
-    private String[] brawlers = { "Shelly", "Colt", "Dynamike", "Brock", "Barley", "Leon", "Jessie", "Bibi", "Penny",
-            "Crow" };
+    private String[] games = { "Genshin Impact", "Overwatch", "Fortnite", "Clash Royale", "Brawl Stars", "Clash of Clans", "Honkai Star-rail", "Valorant", "Roblox",
+            "I hate videogames with a burning passion" };
     private String[] toSort;
     private Scanner Scanner = new Scanner(System.in);
 
-    BrawlStars(int n) {
-        numberOfCharacters = n;
+    VideoGames(int n) {
+        numberOfGames = n;
         toSort = new String[n];
         int count = 0;
 
         while (count < n) {
-            int index = (int) (Math.random() * brawlers.length);
-            String candidate = brawlers[index];
+            int index = (int) (Math.random() * games.length);
+            String candidate = games[index];
 
             if (!contains(toSort, candidate, count)) {
                 toSort[count] = candidate;
@@ -65,7 +65,7 @@ public class BrawlStars {
     }
 
     public void display() {
-        System.out.println("Current Brawler Order:");
+        System.out.println("Current Game Order:");
         for (String b : toSort) {
             System.out.print(b + ", ");
         }
