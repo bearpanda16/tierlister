@@ -32,7 +32,7 @@ public class Main { //soirts
 
 
 
-         if (toSort.equalsIgnoreCase("b")) {
+        else if (toSort.equalsIgnoreCase("b")) {
             System.out.println("How many movies? (maximum 10)");
             int number = Integer.parseInt(scanner.nextLine());
 
@@ -50,7 +50,7 @@ public class Main { //soirts
             }
         } 
         
-        if (toSort.equalsIgnoreCase("c")) {
+        else if (toSort.equalsIgnoreCase("c")) {
             System.out.println("How many games? (maximum 10)");
             int number = Integer.parseInt(scanner.nextLine());
 
@@ -68,7 +68,7 @@ public class Main { //soirts
             }
         } 
 
-        if (toSort.equalsIgnoreCase("d")) {
+        else if (toSort.equalsIgnoreCase("d")) {
             System.out.println("How many sports? (maximum 10)");
             int number = Integer.parseInt(scanner.nextLine());
 
@@ -84,7 +84,8 @@ public class Main { //soirts
             if (tierList.isSorted()==true){
                 System.out.println("Sorting complete! List is ordered best to worst.");
             }
-        } else {
+        } 
+        else {
             System.out.println("That option is not supported yet.");
         }
 
