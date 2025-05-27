@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Main { //soirts
     public static void main(String[] args) {
         System.out.println("Hello, welcome to an automatic tierlist!");
         System.out.println("Which list of characters would you like to sort?");
